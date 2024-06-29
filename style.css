@@ -1,0 +1,381 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(360deg,
+        rgb(10, 127, 236), 
+        rgb(53, 127, 247),
+        purple,
+        black,
+        rgb(7, 110, 206),
+        rgb(53, 127, 247),
+        rgb(0, 217, 255)
+    );
+    background-size: 200% 200%;
+    animation: bg 5s linear infinite;
+}
+
+.hello {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+.hello.name {
+    font-size: 35px;
+}
+.skill_title {
+    font-size: 30px;
+}
+.sname {
+    color: rgb(178, 178, 210);
+    font-family: "Anek Devanagari", sans-serif;
+}
+.para {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.profile {
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 80px;
+}
+
+.profile {
+    width: 50%;
+}
+.neme {
+    width: 60%;
+}
+.profile .profile_photo {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.profile .profile_photo img {
+    height: 200px;
+    border-radius: 50%;
+    background-image: url('./assets/images/Pavan\ Kumar\ background.png');
+    background-position: center;
+    background-size: 190px;
+}
+
+.container2 {
+    margin-top: 30px;
+    background-color: blue;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.skills {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container3 {
+    height: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.comment {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.comment_div {
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    box-shadow: 0px 0px 20px 15px blue;
+    transition: 0.2s;
+}
+.comment_div:hover {
+    transform: scale(0.9);
+    box-shadow: 0px 0px 20px 15px black;
+}
+.form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+textarea {
+    width: 50%;
+    border-radius: 7px;
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 1px;
+}
+button {
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;    
+    color: black;
+    transition: 0.3s;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+}
+button:hover {
+    transform: scale(1.2);
+}
+.form .cm {
+    background-color: orangered;
+}
+.form .contact {
+    background-color: rgb(3, 98, 3);
+    color: white;
+    margin-top: 10px;
+}
+.cm:hover {
+    box-shadow: 0px 0px 10px 5px orangered;
+}
+.contact:hover {
+    box-shadow: 0px 0px 10px 5px rgb(3, 98, 3);
+}
+
+.container-last {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+footer {
+    height: 100%;
+    padding: 90px;
+    text-align: center;
+    color: rgb(178, 178, 210);
+    font-family: "Lugrasimo", cursive;
+}
+.social-medias {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 30px;
+}
+.social-medias img {
+    cursor: pointer;
+    transition: 0.4s;
+}
+.social-medias img:hover {
+    transform: scale(1.6);
+    rotate: 360deg;
+}
+.social-medias .facebook:hover, .linkedin:hover, .twitter:hover {
+    background-color: blue;
+    box-shadow: 0px 0px 6px 5px blue;
+}
+.instagram:hover {
+    background-color: rgb(252, 27, 65);
+    box-shadow: 0px 0px 7px 6px rgb(252, 27, 65);
+}
+.github:hover {
+    background-color: white;
+    box-shadow: 0px 0px 7px 6px white;
+}
+
+@media (min-width: 1400px) {
+    .profile {
+        width: 1320px;
+    }
+    .profile .profile_photo img {
+        height: 240px;
+        background-size: 230px;
+    }
+
+    .skills {
+        width: 1320px;
+    }
+
+    .comment {
+        width: 1320px;
+    }
+
+    footer {
+        width: 1320px;
+    }
+}
+@media (max-width: 1400px) and (min-width: 1200px) {
+    .profile {
+        width: 1140px;
+    }
+    .profile .profile_photo img {
+        height: 240px;
+        background-size: 230px;
+    }
+
+    .skills {
+        width: 1140px;
+    }
+
+    .comment {
+        width: 1140px;
+    }
+
+    footer {
+        width: 1140px;
+    }
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+    .profile {
+        width: 960px;
+    }
+    .profile .profile_photo img {
+        height: 240px;
+        background-size: 230px;
+    }
+
+    .skills {
+        width: 960px;
+    }
+
+    .comment {
+        width: 960px;
+    }
+
+    footer {
+        width: 960px;
+    }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+    .profile {
+        width: 720px;
+    }
+    .profile .profile_photo img {
+        height: 300px;
+        background-size: 290px;
+    }
+
+    .skills {
+        width: 720px;
+        text-align: center; 
+    }
+    .items {
+        gap: 40px;
+    }
+
+    .comment {
+        width: 720px;   
+    }
+
+    footer {
+        width: 720px;   
+    }
+}
+@media (max-width: 768px) and (min-width: 576px) {
+    .profile {
+        width: 540px;
+        padding: 0px;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .profile .name {
+        width: 100%;
+    }
+    .profile .about {
+        padding: 20px;
+    }
+    .profile .profile_photo {
+        justify-content: center;
+    }
+
+    .skills {
+        width: 540px;
+        text-align: center;
+    }
+    .items {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .comment {
+        width: 540px;
+    }
+    textarea {
+        width: 70%;
+    }
+
+    footer {
+        width: 540px;
+    }
+}
+@media(max-width: 576px) {
+    .profile {
+        width: 100%;
+        padding: 0px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .profile .name {
+        width: 100%;
+    }
+    .profile .about {
+        padding: 20px;
+    }
+    .profile .profile_photo {
+        justify-content: center;
+    }
+
+    .skills {
+        width: 100%;
+        text-align: center;
+    }
+    .items {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .comment {
+        width: 100%;
+    }
+    textarea {
+        width: 80%;
+        font-size: 15px;
+    }
+    button {
+        font-size: 13px;
+    }
+    button:hover {
+        transform: scale(1.2);
+    }
+
+    footer {
+        width: 100%;
+    }
+    .social-medias {
+        gap: 20px;
+    }
+    .social-medias img {
+        height: 20px;
+    }
+    .social-medias img:hover {
+        transform: scale(2);
+    }
+    .social-medias .facebook:hover, .linkedin:hover, .twitter:hover {
+        background-color: blue;
+        box-shadow: 0px 0px 3px 2px blue;
+    }
+    .instagram:hover {
+        background-color: rgb(252, 72, 102);
+        box-shadow: 0px 0px 4px 3px rgb(252, 72, 102);
+    }
+    .github:hover {
+        background-color: white;
+        box-shadow: 0px 0px 3px 2px white;
+    }
+}
